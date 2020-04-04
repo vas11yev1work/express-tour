@@ -1,0 +1,33 @@
+main {
+    .headings-section {
+        .headings {
+            margin-bottom: 60px;
+            .heading-block {
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .heading-title {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .images-position-section {
+        padding: 50px 0;
+        .images-position {
+            .typography-position {
+                margin-bottom: 60px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .title {
+                    margin-bottom: 30px;
+                    h2 {
+                        color: $gold;
+                    }
+                }
+            }
+        }
+    }
+}

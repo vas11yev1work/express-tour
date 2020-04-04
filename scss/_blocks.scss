@@ -1,0 +1,555 @@
+.title-logo {
+    display: block;
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        .gold {
+            color: $gold;
+        }
+    }
+    &.dark {
+        h1 {
+            color: $black;
+        }
+    }
+}
+
+p {
+    line-height: 32px;
+    font-size: 16px;
+    text-align: justify;
+    opacity: 0.4;
+    color: $white;
+    &.b-500 {
+        font-weight: 500;
+    }
+    &.b-600 {
+        font-weight: 600;
+    }
+    &.b-700 {
+        font-weight: 700;
+    }
+    &.light-black {
+        color: $black;
+    }
+    &.full-black {
+        opacity: 1;
+        color: $black
+    }
+    &.full-white {
+        opacity: 1;
+        color: $white;
+    }
+}
+
+span {
+    &.b-500 {
+        font-weight: 500;
+    }
+    &.b-700 {
+        font-weight: 700;
+    }
+}
+
+.white-section {
+    background-color: $whiteSection;
+    h1, h2, h3, h4, h5, h6, p, span, small {
+        color: $black;
+    }
+}
+
+.waves-title {
+    margin-bottom: 30px;
+    &.gold {
+        h1, h2, h3, h4, h5, h6 {
+            color: $gold;
+        }
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 26px;
+    }
+    &.center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+    }
+}
+
+.image-text-block {
+    display: flex;
+    img {
+        max-width: 550px;
+        max-height: 360px;
+        width: 100%;
+        height: auto;
+        margin-right: 40px;
+        @media (max-width: 1200px) {
+            max-height: 380px;
+            max-width: 460px;
+        }
+        @media (max-width: 992px) {
+            margin-right: 0;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
+    &.image-right {
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+        flex-direction: row-reverse;
+        img {
+            margin-right: 0;
+            margin-left: 40px;
+            @media (max-width: 992px) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.counts-section {
+    padding: 35px 0 65px 0;
+    .counts {
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 40px;
+            grid-column-gap: 20px;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
+        .count {
+            text-align: center;
+            h2 {
+                color: $gold;
+                font-size: 84px;
+                font-weight: 600;
+            }
+            small {
+                color: $black;
+                font-family: 'EB Garamond', serif;
+                font-size: 16px;
+                font-weight: 600;
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+.guides {
+    .guides-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 120px;
+        grid-row-gap: 80px;
+        margin-top: 40px;
+        @media (max-width: 1200px) {
+            grid-column-gap: 80px;
+            grid-row-gap: 40px;   
+        }
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+        }
+        .guide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .image {
+                width: 200px;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid $gold;
+                border-radius: 100px;
+                img {
+                    height: 90%;
+                    width: 90%;
+                    border-radius: 100px;
+                }
+            }
+            .name {
+                color: $gold;
+                font-size: 24px;
+                margin: 10px 0 20px 0;
+            }
+            .description {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.newsletter-wrap {
+    display: flex;
+    justify-content: center;
+    .newsletter-form {
+        max-width: 340px;
+        width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+}
+
+#map {
+    height: 480px;
+    width: 100%;
+    @media (max-width: 768px) {
+        height: 360px;
+    }
+}
+
+#not-found-map {
+    width: 100%;
+    height: 440px;
+    @media (max-width: 768px) {
+        height: 300px;
+    }
+}
+
+.slider-block {
+    position: relative;
+    .slides {
+        .slider-block-item {
+            min-width: 100%;
+            position: relative;
+            .overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background: linear-gradient(26.67deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 42.91%);
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .slider-buttons {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        display: flex;
+        .change-slide {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+            height: 40px;
+            width: 40px;
+            background-color: $white;
+            border: none;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.uppercase-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.4;
+    &.black {
+        color: $black;
+    }
+}
+
+.tour-block {
+    display: flex;
+    @media (max-width: 992px) {
+        flex-direction: column;   
+    }
+    .image {
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: relative;
+        margin-right: 40px;
+        @media (max-width: 992px) {
+            margin-bottom: 20px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(36.5deg, rgba(0, 0, 0, 0.8) 0%, rgba(196, 196, 196, 0) 73.86%);
+        }
+        max-width: 370px;
+        @media (max-width: 992px) {
+            max-width: 100%;
+        }
+        img {
+            @media (max-width: 992px) {
+                width: 100%;
+            }
+            height: 250px;
+            width: 370px;
+        }
+        .price-label {
+            width: 120px;
+            background-color: $gold;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            bottom: 15px;
+            h5 {
+                color: $white;
+            }
+        }
+    }
+    .tour-description {
+        .title {
+            margin-bottom: 20px;
+            h5 {
+                color: $gold;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+        }
+        .description-text {
+            margin-bottom: 20px;
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+        .choose-this-tour {
+            width: 260px;
+        }
+    }
+}
+
+.review-block {
+    padding-bottom: 40px;
+    border-bottom: 1px solid $line;
+    margin-bottom: 40px;
+    &:last-child {
+        padding-bottom: 0;
+        border: none;
+        margin-bottom: 0;
+    }
+    .name {
+        margin-bottom: 20px;
+        .name-text {
+            color: $gold;
+        }
+    }
+}
+
+.tour-description {
+    .title {
+        margin-bottom: 30px;
+        h5 {
+            color: $gold;
+        }
+    }
+    .price {
+        margin-bottom: 30px;
+    }
+    .preferential-prices {
+        margin-bottom: 30px;
+        .preferential-price {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            span {
+                font-weight: 500;
+                opacity: 0.4;
+                &.value {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .buy-button {
+        width: 230px;
+    }
+}
+
+.status-group {
+    .input-data {
+        margin-top: 4px;
+        display: flex;
+        align-items: center;
+        .input {
+            position: relative;
+            .number-of-people {
+                font-family: 'EB Garamond', serif;
+                font-size: 22px;
+                font-weight: 700;
+                text-align: center;
+                width: 100px;
+                padding: 0 26px 0 10px;
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0; 
+                }
+            }
+            .count-buttons {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                button {
+                    height: 100%;
+                    width: 26px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 0;
+                    &:hover {
+                        background-color: rgba(0,0,0,.04);
+                    }
+                }
+            }   
+        }
+        .amount-wrap {
+            margin-left: 8px;
+            font-family: 'EB Garamond', serif;
+            font-size: 22px;
+            span {
+                font-weight: 500;
+                &.amount-value {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.tours-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+    h1, h2, h3, h4, h5, h6, p, span {
+        color: $black;
+    }
+    .overlay {
+        background-color: rgba(0,0,0,.6);
+        height: 100%;
+        width: 100%;
+    }
+    .modal-block {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $white;
+        padding: 30px;
+        max-width: 540px;
+        width: 100%;
+        overflow-y: auto;
+        max-height: 80vh;
+        @media (max-width: 576px) {
+            max-height: 100vh;
+            height: 100%;
+            max-width: 100%;
+            top: 0;   
+        }
+        .close-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 50px;
+            width: 50px;
+            color: $black;
+            font-size: 32px;
+            background-color: transparent;
+            border: none;
+        }
+        form {
+            .string {
+                display: flex;
+                margin-bottom: 10px;
+                @media (max-width: 576px) {
+                    flex-direction: column;
+                }
+                input {
+                    width: 100%;
+                    margin-right: 10px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    @media (max-width: 576px) {
+                        margin-bottom: 10px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            textarea {
+                width: 100%;
+                height: 90px;
+            }
+            .buy-button-wrap {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                .buy-button {
+                    width: 240px;
+                }
+            }
+            .label-wrap {
+                display: flex;
+                justify-content: center;
+                opacity: 0.4;
+                margin-top: 20px;
+                small {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

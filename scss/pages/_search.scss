@@ -1,0 +1,48 @@
+main {
+    .search-tour-section {
+        .search-tour {
+            .search-string {
+                display: flex;
+                justify-content: center;
+                .search-wrap {
+                    max-width: 600px;
+                    width: 100%;
+                    position: relative;
+                    .search-input {
+                        width: 100%;
+                        padding: 0 70px 0 20px;
+                    }
+                    .search {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border: none;
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $white;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+    .tours-section {
+        margin: 50px 0;
+    }
+    .pagination-section {
+        .pagination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 0;
+            border-top: 1px solid $line;
+            border-bottom: 1px solid $line;
+            .buttons-list {
+                display: flex;
+            }
+        }
+    }
+}

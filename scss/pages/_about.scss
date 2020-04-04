@@ -1,0 +1,28 @@
+main {
+    .about-us-section {
+        .about-us {
+            .description {
+                margin-bottom: 80px;
+                margin-top: 40px;
+                .description-block {
+                    margin-bottom: 40px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .guides-section {
+        padding: 50px 0 80px 0;
+    }
+    .newsletter-section {
+        padding: 50px 0 60px 0;
+        .newsletter-input {
+            margin-bottom: 10px;
+        }
+        .newsletter-button {
+            width: 100%;
+        }
+    }
+}

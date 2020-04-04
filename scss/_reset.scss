@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $white;
+}
+
+img {
+    display: flex;
+    object-fit: cover;
+}
+
+textarea {
+    resize: none;
+    display: flex;
+}
+
+p {
+    font-size: 16px;
+}
+
+input, button, textarea {
+    outline: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+        width: 960px;
+    }
+    @media (max-width: 992px) {
+        width: 720px;
+    }
+    @media (max-width: 768px) {
+        width: 540px;
+    }
+    @media (max-width: 576px) {
+        width: 100%;
+        padding: 0 16px;
+    }
+}

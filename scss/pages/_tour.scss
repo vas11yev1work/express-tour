@@ -1,0 +1,43 @@
+main {
+    .tour-section {
+        margin-bottom: 50px;
+        .tour {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 40px;
+            @media (max-width: 992px) {
+                grid-template-columns: 1fr;   
+            }
+        }
+    }
+    .tour-description-section {
+        padding: 50px 0 70px 0;
+        .tour-description {
+            .description-text {
+                &.open {
+                    p {
+                        display: block;
+                    }
+                }
+                p {
+                    display: none;
+                    margin-bottom: 24px;
+                    &:nth-child(1) {
+                        display: block;
+                    }
+                }
+            }
+            .show-more {
+                background-color: transparent;
+                border: none;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                text-decoration: underline;
+                color: $black;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        } 
+    }
+}

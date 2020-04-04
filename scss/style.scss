@@ -1,0 +1,27 @@
+/* === imports === */
+
+@import './colors';
+@import './reset';
+@import './buttons';
+@import './blocks';
+@import './typography';
+@import './header';
+@import './footer';
+@import './forms';
+
+/* === pages === */
+
+@import './pages/index';
+@import './pages/typograhpy';
+@import './pages/about';
+@import './pages/contacts';
+@import './pages/reviews';
+@import './pages/tour';
+@import './pages/search';
+@import './pages/404';
+
+/* === styles === */
+
+body {
+    background-color: $black;
+}

@@ -1,0 +1,37 @@
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    background-color: $gold;
+    color: $white;
+    border: none;
+    border-radius: 0;
+    &.outlined {
+        background-color: transparent;
+        border: 2px solid $gold;
+        &.black {
+            color: $black;
+        }
+    }
+}
+
+.pagination-button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: $white;
+    border-radius: 0;
+    color: $black;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: $gold;
+    margin: 0 5px;
+    &.active {
+        background-color: $gold;
+        color: $white;
+    }
+}
